@@ -1,3 +1,21 @@
+// ==UserScript==
+// @name         Github html preview
+// @author       https://github.com/vaniakosmos
+// @version      1.0
+// @description  Shortcut for htmlpreview.github.io
+// @match        https://github.com/**/*.html
+// @grant        none
+// @require http://code.jquery.com/jquery-3.2.1.min.js
+// ==/UserScript==
+
+$(document).ready(function() {
+    var viewBtn = $('<a>')
+        .attr('href', 'http://htmlpreview.github.io/?' + window.location.href)
+        .attr('class', 'btn btn-sm BtnGroup-item')
+        .html('Html preview');
+    $('.file-actions').find('.BtnGroup').append(viewBtn);
+});
+
 <!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name=description content="Profile report generated with the `pandas-profiling` Python package"><meta name=author content="Simon Brugman and the open source community."><meta name=generator content="Pandas Profiling v2.10.0"><meta name=url content=https://github.com/pandas-profiling/pandas-profiling><meta name=date content="2021-01-21 23:42:13.102480"><title>Text Report</title><style>
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
