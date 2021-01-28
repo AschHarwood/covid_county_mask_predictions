@@ -6,6 +6,12 @@ This model is an initial prototype that attempts to forecast mask wearing based 
 
 The secondary goal of this model is to develop a methodology for integrating realtime information flows with contextual information to predict and/or forecast how different groups of people might change their attitudes, beliefs, and/or behaviors based on an evolving information ecosystem. This type of work could be useful to quickly detect any potential changes in human behavior and help, for example, public health practitioners to better allocate resources, design more targeted health communication campaigns, etc. 
 
+The main model code is here:
+https://github.com/AschHarwood/covid_county_mask_predictions/blob/main/notebooks/stacked_model_v2_1_20_21.ipynb
+
+A preprocessed dataset can be downloaded here:
+https://drive.google.com/file/d/1kwDh-_oxwrlj3xAQEgyEbRnqnHWYr06N/view?usp=sharing
+
 ## Feature Data
 
 This MVP uses as its feature set numeric inputs from the CDC Social Vulnerability Index, Measure of America Youth Disconnection Index, and Apple mobility data at the county-level, combined with county-level geolocated tweets and state geotagged Covid-related news. 
